@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dg:help-project xmlns:dg="http://www.gehtsoft.com/docgen/project">
+ <dg:common>
+  <dg:define name="simplified-text-syntax" value="yes" />
+ </dg:common>
+ <dg:source>
+  <dg:file name="src/index.ds" encoding="utf-8" />
+  <dg:file name="src/ns/BallisticCalculator.ds" encoding="utf-8" />
+  <dg:file name="src/ns/BallisticCalculator.Reticle.ds" encoding="utf-8" />
+  <dg:file name="src/ns/BallisticCalculator.Reticle.Data.ds" encoding="utf-8" />
+  <dg:file name="src/ns/BallisticCalculator.Reticle.Draw.ds" encoding="utf-8" />
+  <dg:file name="src/ns/BallisticCalculator.Serialization.ds" encoding="utf-8" />
+  <dg:folder name="src/raw" encoding="utf-8" />
+ </dg:source>
+ <dg:output template="%docgen%/template/html/main.xsl" file="dst/null-file" encoding="utf-8">
+  <dg:define name="text-language" value="en" />
+  <dg:define name="write-hhp" value="no" />
+  <dg:define name="help-title" value="Gehtsoft Ballistic Calculator Library" />
+  <dg:define name="advanced-web-content" value="yes" />
+  <dg:define name="default-transform" value="yes" />
+  <dg:define name="enable-highlighter" value="yes" />
+  <dg:define name="external-resources" value="yes" />
+  <dg:define name="web-content-file-name" value="index" />
+  <dg:define name="web-content-file-name-backward-compatibility" value="yes" />
+ </dg:output>
+ <dg:output template="%docgen%/template/xmldoc/main.xsl" file="BallisticCaculator.xml" encoding="utf-8">
+  <dg:define name="assembly" value="BallisticCalculator" />
+  <dg:define name="namespace" value="BallisticCalculator.+" />
+  <dg:define name="write-summary" value="yes" />
+ </dg:output>
+</dg:help-project>
