@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\custom.txt" />
+    <None Remove="resources\custom2.txt" />
+    <None Remove="resources\drg.txt" />
+    <None Remove="resources\drg2.txt" />
+    <None Remove="resources\g1_nowind.txt" />
+    <None Remove="resources\g1_nowind_up.txt" />
+    <None Remove="resources\g1_twist.txt" />
+    <None Remove="resources\g1_wind.txt" />
+    <None Remove="resources\g1_wind_cold.txt" />
+    <None Remove="resources\g1_wind_hot.txt" />
+    <None Remove="resources\g7_nowind.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="resources\custom2.txt" />
+    <EmbeddedResource Include="resources\custom.txt" />
+    <EmbeddedResource Include="resources\drg2.txt" />
+    <EmbeddedResource Include="resources\g1_nowind_up.txt" />
+    <EmbeddedResource Include="resources\g1_twist.txt" />
+    <EmbeddedResource Include="resources\g7_nowind.txt" />
+    <EmbeddedResource Include="resources\g1_nowind.txt" />
+    <EmbeddedResource Include="resources\g1_wind_cold.txt" />
+    <EmbeddedResource Include="resources\g1_wind_hot.txt" />
+    <EmbeddedResource Include="resources\g1_wind.txt" />
+    <EmbeddedResource Include="resources\drg.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.20.72" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="NReco.Csv" Version="1.0.3" />
+    <PackageReference Include="FluentAssertions" Version="8.6.0" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="6.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="LiquidTestReports.Markdown" Version="1.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BallisticCalculator\BallisticCalculator.csproj" />
+  </ItemGroup>
+
+</Project>
